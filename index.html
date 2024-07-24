@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Arnold Sebastian's portfolio showcasing web development and digital art services.">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="header"  data-animation="top">
+      <a href="#home" class="logo" style="font-family:MyFont5"  data-animation=left >
+        A <span style="font-family:MyFont5">S</span>
+      </a>
+
+      <i class="bx bx-menu" id="menu-icon"  data-animation="top"></i>
+
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+      </nav>
+
+      <a href="#contact"  data-animation=right >
+      <button class="gradient-btn" style="font-family: MyFont1;">Contact Me</button></a>
+    </header>
+    
+    <!-- Home Section -->
+     
+    <section class="home" id="home">
+      <div class="home-content hidden" >
+        <h1 id="name" data-animation="right" style="text-shadow: 0px 0px 9px var(--main-color);">Hi, it's <span style="font-family: MyFont3; text-shadow: none;">Arnold</span></h1>
+        <h3 data-animation="left" style="width: 100%;">I'm a <span>Web Developer & Digital Artist</span></h3>
+        <p id="main">
+          Welcome to my digital universe! I'm Arnold Sebastian, 
+          a passionate Web Developer and Digital Artist committed to 
+          bringing creativity and technology together to craft engaging, 
+          user-friendly, and visually stunning web experiences. With a 
+          solid foundation in HTML, CSS, JavaScript, and a keen eye for 
+          design, I strive to transform ideas into interactive digital 
+          solutions.
+        </p>
+
+        <div class="social-icons hidden slide-left">
+          <a class="social-icon" href="https://github.com/ArnoldSeb">
+            <i class="bx bxl-github"></i>
+          </a>
+          <a class="social-icon" href="https://www.linkedin.com/in/arnold-sebastian-142960285/">
+            <i class="bx bxl-linkedin-square"></i>
+          </a>
+          <a class="social-icon" href="https://www.instagram.com/_.arnold_sebastian._/">
+            <i class="bx bxl-instagram-alt"></i>
+          </a>
+          <a class="social-icon" href="https://x.com/Arnold_Seb_">
+            <i class="bx bxl-twitter"></i>
+          </a>
+        </div>
+
+        <!-- Button Group -->
+        <div class="btn-group hidden slide-left">
+          <!-- Modal Structure -->
+          <div id="hire-modal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2>Hire Me</h2>
+              <form id="hire-form" action="https://formspree.io/f/mvgpzozq" method="POST" >
+                <label for="name" style="display: none;">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Name" style="box-shadow: inset 0 0 5px rgb(0, 0, 0);" required>
+
+                <label for="email" style="display: none;">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email" style="box-shadow: inset 0 0 5px rgb(0, 0, 0);" required>
+
+                <label for="service" style="display: none;">Service:</label>
+                <select id="service" name="service" style="box-shadow: inset 0 0 5px rgb(0, 0, 0);" required>
+                  <option value="frontend">Web Development</option>
+                  <option value="backend">Digital Art</option>
+                  <!-- Add more services as needed -->
+                </select>
+
+                <label for="appointment-date" style="color: black;">Preferred Date:</label>
+                <input type="date" id="appointment-date" name="appointment-date" placeholder="Date" style="box-shadow: inset 0 0 5px rgb(0, 0, 0);" required>
+
+                <label for="appointment-time" style="color: black;">Preferred Time:</label>
+                <input type="time" id="appointment-time" name="appointment-time" placeholder="Time" style="box-shadow: inset 0 0 5px rgb(0, 0, 0);" required>
+
+                <button type="submit" class="gradient-btn" >Send Request</button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Trigger Button -->
+          <button id="hire-btn" class="gradient-btn">Hire Me</button>
+
+          <a href="#contact" class="btn">Contact</a>
+        </div>
+      </div>
+
+      <div class="home-img">
+        <img src="image.jpeg" alt="">
+      </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="about-content" data-animation="left">
+        <h2 data-animation="left">About <span>Me</span></h2>
+        <p>
+          Passionate about creating beautiful, functional digital experiences. 
+          With a blend of technical skills and creative vision, I design stunning 
+          websites and captivating digital art.
+          <br><br>
+          Explore my work and let's build something amazing together!
+          <br><br>
+        </p>
+        <div class="more-details" id="more-details" data-animation="bottom">
+          <p>
+            <span  style="font-family:MyFont4; font-size: 5rem;">Web Development</span><br>
+            "As a skilled web developer, I specialize in creating functional, 
+            user-friendly websites and web applications. My expertise in HTML, 
+            CSS, and JavaScript, combined with a keen eye for design, ensures 
+            that every project is both visually appealing and technically sound. 
+            Whether you need a simple landing page or a complex web application, 
+            I am dedicated to delivering high-quality, timely solutions that meet 
+            your needs and exceed your expectations."
+            <br><br>
+            <span style="font-family:MyFont4; font-size: 5rem;">Digital Art</span><br>
+            "With a passion for digital art, I specialize in creating detailed and 
+            captivating digital drawings. My work combines creativity with 
+            precision, ensuring that each piece is unique and tailored to your needs.
+            By integrating artistic flair with technical skill, I bring your vision
+            to life in a way that enhances your brand and engages your audience. 
+            Trust me to deliver exceptional digital art that elevates your online 
+            presence."
+          </p>
+          <a href="Arnold_Resume.pdf" target="_blank" id="resume-link">
+            <button>View and Download Resume</button>
+          </a>
+        </div>
+        <button class="btn hidden slide-left" id="read-more-btn">Read More</button>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+<section class="services" id="services">
+  <h2 class="heading" data-animation="right" style="font-family: MyFont3; text-shadow: 10px 10px 50px whitesmoke;">Services</h2>
+
+  <div class="services-container">
+    <div class="service-box" data-animation="left" data-service="frontend">
+      <div class="box-content">
+        <div class="box-front">
+          <div class="service-info">
+            <i class="bx bx-code bx-flashing"></i>
+            <h4>Frontend Development</h4>
+            <br><br><br><br><br><br>
+            <p>
+              read more <i class='bx bxs-pointer bx-flashing  bx-md'></i>
+            </p>
+          </div>
+        </div>
+        <div class="box-back">
+          <div class="service-info">
+            <i class="bx bx-code bx-flashing"></i>
+            <br>
+            <p>
+              My journey as a web developer started with a fascination for how the web works and a desire to create seamless, responsive, and dynamic websites. 
+              I specialize in building efficient and intuitive interfaces, ensuring that every click and interaction on my websites is meaningful and engaging. 
+              Whether it's a simple landing page or a complex web application, I pay meticulous attention to detail and functionality, ensuring a smooth user experience across all devices.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-box" data-animation="right" data-service="digital-arts">
+      <div class="box-content">
+        <div class="box-front">
+          <div class="service-info">
+            <i class='bx bxs-color bx-spin'></i>
+            <h4>Digital Arts</h4>
+            <br><br><br><br><br><br>
+            <p>
+              read more <i class='bx bxs-pointer bx-flashing  bx-md'></i>
+            </p>
+          </div>
+        </div>
+        <div class="box-back">
+          <div class="service-info">
+            <i class='bx bxs-color bx-spin'></i>
+            <br><br>
+            <p>
+              As a digital artist, I leverage my design skills to add a unique touch to my web projects. My background in art allows me to create visually captivating graphics, 
+              animations, and layouts that not only enhance the aesthetic appeal but also communicate the essence of the brand or message effectively. 
+              I believe in the power of visuals to tell stories and evoke emotions, and I strive to incorporate this belief into every project I undertake.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+      <h1 id="web" data-animation="left" style="font-size: 5rem;" >Web <span style="font-family: MyFont3; font-size: 4rem;">Development</span></h1>
+      <br><br><br><br><br>
+      <h2 class="projects-bcx"></h2>
+      <div class="project-box">
+        <div class="project-card" data-animation="bottom">
+          <img src="preview.png" alt="">
+
+          <h3 style="font-family: MyFont3;">Project 1</h3>
+          <p style="font-family: MyFont3;">
+            A responsive To-Do List web application built using HTML, CSS, and JavaScript. This app allows users to create, edit, delete, and prioritize daily tasks, making 
+            task management simple and efficient. It features progress tracking and ensures data persistence using local storage.
+          </p>
+          <a href="https://github.com/ArnoldSeb/CodeAlpha_Project_To-do-list" target="_blank">
+          <div class="btn">Review Project</div></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="digital-art" id="digital-art">
+      <h2 class="heading" data-animation="left" style="font-family: MyFont3; font-size: 6rem;">
+        Digital Art 
+        <span style="font-family: MyFont2; font-size: 11rem;">Gallery</span>
+      </h2>
+      <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0" data-percentage="0" data-animation="left">
+        <i class='bx bxs-hand-left bx-fade-left bx-lg'></i>
+        <img class="image" src="scenery.jpg" draggable="false" alt="Scenery" />
+        <img class="image" src="quick draw .jpg" draggable="false" alt="Quick Draw" />
+        <img class="image" src="forest.jpg" draggable="false" alt="Forest" />
+        <img class="image" src="apple.jpg" draggable="false" alt="Apple" />
+        <img class="image" src="law.png" draggable="false" alt="Law" />
+        <img class="image" src="Sakura.jpg" draggable="false" alt="Sakura" />
+      </div>
+    </section>
+    
+    
+
+   <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <h2 class="heading" data-animation="right" style="text-shadow: 10px 10px 50px whitesmoke; font-size: 3rem;">Contact</h2>
+      <form id="contact-form" action="https://formspree.io/f/mvgpzozq" method="POST">
+        <div class="input-group">
+          <div class="input-box">
+            <label for="name" style="display:none">Name</label>
+           <input type="text" placeholder="Full Name" name="Name" required data-animation="left">
+            <label for="email" style="display:none">Email</label>
+            <input type="email" placeholder="Email" name="Email" required data-animation="left">
+         </div>
+         <div class="input-box">
+            <label for="phone" style="display:none">Phone</label>
+            <input type="number" placeholder="Phone Number" name="Phone" required data-animation="left">
+            <label for="subject" style="display:none">Subject</label>
+            <input type="text" placeholder="Subject" name="Subject" required data-animation="left">
+         </div>
+       </div>
+       <div class="input-group-2">
+         <label for="textarea" style="display:none">TextArea</label>
+         <textarea name="TextArea" placeholder="Your Message"  required cols="30" rows="10" data-animation="right"></textarea>
+         <button id="contact-btn" class="gradient-btn">Contact</button>
+        </div>
+     </form>
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer class="footer " data-animation="bottom">
+      <div class="social-icons">
+        <a href="https://github.com/ArnoldSeb">
+          <i class="bx bxl-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/arnold-sebastian-142960285/">
+          <i class="bx bxl-linkedin-square"></i>
+        </a>
+        <a href="https://www.instagram.com/_.arnold_sebastian._/">
+          <i class="bx bxl-instagram-alt"></i>
+        </a>
+        <a href="https://x.com/Arnold_Seb_">
+          <i class="bx bxl-twitter"></i>
+        </a>
+      </div>
+      
+      <ul class="list">
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <p class="copyright">
+        &#169; Arnold Sebastian | All Rights Reserved
+      </p>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="java.js"></script>
+  </body>
+</html>
+
